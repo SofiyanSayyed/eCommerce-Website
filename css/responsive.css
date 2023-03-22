@@ -1,0 +1,23 @@
+body{
+    background-color: red;
+}
+
+#banner-section2 .banner {
+    justify-content: center;
+    min-width: 150px;
+}
+#header ul{
+    flex-direction: column;
+    
+}
+#header ul li{
+    margin-top: 10px;    
+}
+#banner-section3 .banner{
+    width: 250px;
+    height: 175px;
+}
+
+#feactured{
+    flex-wrap: wrap;
+}

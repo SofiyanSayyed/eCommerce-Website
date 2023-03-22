@@ -1,0 +1,99 @@
+
+h1{
+    font-size: 35px;
+}
+
+#header {
+    
+    padding: 20px 40px;
+    
+}
+#header #navbar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 0px;
+    transition: .2s ease;
+}
+
+#header #navbar{
+    padding-top: 50px;
+}
+#header #navbar li{
+    margin-top: 23px;
+}
+
+#header #navIcons{
+    display: flex;
+    justify-content: flex-end;
+}
+#header #navIcons li{
+    padding: 0px 15px;
+}
+.fa-bars:before, .fa-navicon:before {
+    font-size: 25px;
+}
+#header #navIcons li a {
+    font-size: 25px;
+}
+#header #navbar.active{
+    right: 0px;
+}
+#header #navbar #navX{
+    display: block;
+    position: absolute;
+    top:0px;
+    font-size: 24px;
+}
+
+#hero {
+    height: 50vh;
+}
+#hero::before {
+    background-position: 70% 0%;
+}
+
+#feactured {
+    justify-content: center;
+    padding: 80px 0px;
+}
+#feactured .fe-box {
+    margin: 15px 15px;
+}
+
+#banner-section {
+    height: 30vh;
+}
+
+#banner-section2 {
+    justify-content: center;
+    padding: 40px 40px;
+}
+
+#banner-section2 .banner {
+    min-width: 100%;
+    height: 30vh;
+}
+#banner-section3 {
+    padding: 0px;
+    display: block;
+    height: 60vh;
+    padding: 80px 40px;
+}
+#banner-section3 .banner {
+    background-position: top;
+    min-width: 100%;
+    height: 30%;
+}
+
+#newsletterbanner #form{
+   padding-top: 20px;
+}

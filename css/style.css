@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --theme-color: #1e8ab4;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box ;
+    max-width: 100vw;
+}
+
+.sectionPadding{
+    padding: 40px 80px;
+}
+h1{
+    font-size: 50px;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+h4{
+    font-size: 15px;
+}
+button.btn{
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 13px 30px;
+    background-color: var(--theme-color);
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s;
+ 
+}
+
+
+
+/* Header Styling */
+#header{
+    padding: 10px 40px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,.2);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#header #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    flex-wrap: wrap;
+    
+}
+
+#header #navbar li{
+    list-style: none;
+    font-size: 19px;
+    font-weight: 500px;
+    position: relative;
+}
+#header #navbar #navX{
+    display: none;
+}
+
+#header #navbar li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#header #navbar li a:hover,
+#header #navbar li a.active{
+    color: var(--theme-color)
+}
+
+#header #navbar li a.active::after,
+#header #navbar li a:hover::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--theme-color);
+
+}
+#header #navIcons{
+    display: none;
+    list-style: none;
+}
+#header #navIcons li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+
+/* Hero Section Styling*/
+#hero{
+    margin: 0px;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+#hero::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    background-image: url(/Img/herooo.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 25% 0%;
+    z-index: -1;
+}
+
+#hero h1,h3{
+    margin: 0px;
+    margin-bottom: 10px;    
+}
+
+#hero :nth-child(3){
+    color: var(--theme-color);
+}
+
+#hero :nth-child(4){
+    margin: 0px;
+    margin-bottom: 2rem;
+}
+
+
+
+#hero .btn{
+    background-color: rgb(241, 241, 156);
+    color: black;
+}
+#hero .btn:hover{
+    box-shadow: 0px 0px 15px 0px rgb(104, 104, 104);
+}
+
+
+
+/*Feactures Section Styling*/
+#feactured{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+#feactured .fe-box{
+    text-align: center;
+    border: 1px solid rgb(209, 209, 209);
+    width: 150px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: 0px 0px 10px 0px rgba(146, 146, 146, 0.637);
+    transition: 0.2s ease;
+}
+#feactured .fe-box:hover{
+    box-shadow: 0px 0px 30px 2px rgba(146, 146, 146, 0.637);
+    transform: translateY(-2%);
+
+}
+
+#feactured .fe-box img{
+    margin-bottom: 6px;
+}
+#feactured .fe-box h4{
+    display: inline-block;
+    margin: 0px;
+    background-color: rgb(243, 213, 217);
+    color: var(--theme-color);
+    padding: 3px 10px;
+    border-radius: 4px;
+    
+}
+
+
+/* Products Section Styling*/
+#products-section1{
+    text-align: center;
+   
+}
+#products-section1 .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+#products-section1 .pro-card{
+    padding: 10px 12px;
+    border: 1px solid gray;
+    width: 10%;
+    margin: 0px 15px;
+    min-width: 225px;
+    padding: 20px 20px;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: .2s ease;
+}
+#products-section1 .pro-card:hover{
+    box-shadow: 0px 0px 15px 0px rgba(146, 146, 146, 0.637);
+}
+#products-section1 .pro-card img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+#products-section1 h1{
+    margin-bottom: 5px;
+}
+#products-section1 p{
+    font-size: 17px;
+}
+.pro-card .content{
+    text-align: start;
+}
+.pro-card .content span{
+    color: rgb(112, 112, 112);
+}
+.pro-card .pro-name{
+    margin: 0px;
+    margin-top: 0.8rem;
+    margin-bottom: .5rem;
+    color: var(--theme-color);
+}
+.pro-card .pro-prize{
+    margin: 0px;
+    margin-top: 0.8rem;
+    color: var(--theme-color);
+    display: inline-block;
+}
+
+.pro-card .content .star-icons{
+    color: rgb(250, 228, 34);
+}
+.pro-card .content .cart{
+    font-size: 18px;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(223, 223, 223);
+    color: var(--theme-color);
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.pro-card .content .cart:hover{
+    box-shadow: 0px 0px 6px 0px rgb(104, 104, 104);
+}
+
+
+
+/* Banner Section Styling*/
+#banner-section{
+    text-align: center;
+    color: white;
+    background-image: url(/Img/Blog/b2.jpg);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+#banner-section h2{
+    margin-bottom: 2rem;
+}
+#banner-section h1{
+    margin-bottom: 2rem;
+}
+#banner-section span{
+    color: red;
+}
+#banner-section button:hover{
+    box-shadow: 0px 0px 15px 0px rgb(2, 56, 128);
+}
+
+/* Banner section2 Styling*/
+#banner-section2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#banner-section2 .banner{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(/Img/Banner/b17.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+#banner-section2 .banner2{
+    background-image: url(/Img/Banner/b10.jpg);
+}
+#banner-section2 .banner h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+#banner-section2 .banner h2{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+#banner-section2 .banner span{
+    font-size: 18px;
+    font-weight: 300;
+}
+#banner-section2 .banner .white-btn{
+    border: 2px solid white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 21px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s;
+    margin-top: 16px;
+}
+#banner-section2 .banner:hover .white-btn{
+    border: 2px solid var(--theme-color);
+    background-color: var(--theme-color);
+}
+
+
+
+
+/*Banner Section3 Styling*/
+#banner-section3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+#banner-section3 .banner{
+    color: rgb(255, 0, 0);
+    background-image: url(/Img/Banner/b7.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 360px ;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#banner-section3 .banner2{
+    background-image: url(/Img/Banner/b4.jpg);
+}
+#banner-section3 .banner3{
+    background-image: url(/Img/Banner/b18.jpg);
+}
+#banner-section3 .banner h2{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+
+
+
+/* News Letter Banner Styling*/
+#newsletterbanner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 130px;
+    background-image: url(/Img/Banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-color: rgb(9, 9, 73);
+    background-size: 50%;
+}
+
+#newsletterbanner .content h2{
+    font-size: 30px;
+    color: white;
+    margin: 0px;
+    margin-bottom: 1rem;
+    
+}
+#newsletterbanner .content p{
+    font-size: 17px;
+    color: rgb(136, 136, 136);
+    margin: 0px;
+    
+}
+#newsletterbanner .content span{
+    color: rgb(194, 174, 1);
+    
+}
+#newsletterbanner #form{
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+#newsletterbanner #form input{
+    background-color: white;
+    height: 2.5rem;
+    font-size: 15px;
+    width: 100%;
+    padding: 3px 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+
+    
+}
+#newsletterbanner #form input:focus{
+    outline: none;
+}
+
+#newsletterbanner #form button{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 0px;
+    width: 9rem;
+    height: 2.9rem;
+   
+}
+
+
+
+/* Footer Styling*/
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+} 
+#footer p{
+    color: rgb(53, 53, 53);
+    
+}
+
+#footer a{
+    margin: 10px 0px;
+    text-decoration: none;
+    display: block;
+    color: rgb(53, 53, 53);
+    transition: .2s ease;
+    
+}
+#footer a:hover,
+#footer .col .icons i:hover{
+    color: var(--theme-color);
+
+}
+#footer .col h3{
+    margin: 30px 0px;
+    
+}
+#footer .col #followus{
+    margin-top: 30px !important;
+    margin: 10px 0px;
+    
+}
+#footer .col .icons i{
+    color: rgb(53, 53, 53);
+    padding: 2px 2px ;
+    cursor: pointer;
+    transition: .2s ease;
+    
+}
+#footer .col .icons i:hover{
+    color: var(--theme-color);
+    
+}
+#footer .col #appstores img{
+    border: 2px solid var(--theme-color);
+    border-radius: 8px;
+    cursor: pointer ;
+    
+}
+#footer .copyright{
+    color: rgb(53, 53, 53);
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 18px;
+}
